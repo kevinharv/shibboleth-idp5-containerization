@@ -21,14 +21,14 @@
     </encoder>
   </appender>
 
-  <root level="INFO">
+  <root level="DEBUG">
     <appender-ref ref="jetty" />
   </root>
 
-  <logger name="org.eclipse.jetty.server.RequestLog" level="INFO" additivity="false">
+  <logger name="org.eclipse.jetty.server.RequestLog" level="DEBUG" additivity="false">
     <appender-ref ref="jetty-access" />
   </logger>
 
   <logger name="org.springframework" level="OFF" />
-  <logger name="ch.qos.logback" level="WARN" />
+  <logger name="ch.qos.logback" level="DEBUG" />
 </configuration>

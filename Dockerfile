@@ -61,4 +61,6 @@ RUN mkdir -p $SHIBBOLETH_IDP_HOME \
 
 
 EXPOSE 80 443
-ENTRYPOINT ["/usr/local/corretto/bin/java", "-Djetty.base=/var/lib/jetty", "-Djetty.home=/opt/jetty", "-jar", "/opt/jetty/start.jar"]
+CMD ["/usr/local/corretto/bin/java", "-Djetty.base=/var/lib/jetty", "-Djetty.home=/opt/jetty", "-jar", "/opt/jetty/start.jar"]
+
+#  /usr/local/corretto/bin/java -Djetty.base=/var/lib/jetty -Djetty.home=/opt/jetty -jar /opt/jetty/start.jar
